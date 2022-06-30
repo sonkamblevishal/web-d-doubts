@@ -1,0 +1,216 @@
+*{
+   
+box-sizing: border-box;
+}
+
+body{
+    /* background-color: #EFEFEF; */
+    margin:0px;
+   }
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
+   
+}
+
+
+nav{
+    height: 5rem;
+    background-color: #cdf1d8;
+    padding: 0.25rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main{
+    padding: 5rem;
+    justify-content:space-evenly;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.main > img{
+    width: 40%;
+}
+
+.trending_coin{
+    background-color: #95D5B2;
+    font-family: 'Nunito', sans-serif;
+    padding: 1rem;
+    overflow-x: hidden;
+   
+}
+
+.trending_coin .card{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 5vw;
+    min-width:fit-content;
+    height: fit-content;
+    word-break: normal;
+    word-wrap: normal !important;
+     
+}
+
+.card h3{
+    font-size: 25px;
+}
+
+.card h4{
+    font-size: 20px;
+}
+
+
+.trending_coin .card img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    padding-top: 0.5rem;
+     
+}
+
+.trending_coin > .scroll_animation{
+    font-family: 'Nunito', sans-serif;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    left: -1000px;
+    animation-name:smooth_scroll;
+    animation-duration: 15s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* overflow-x: scroll;  */
+     
+}
+
+.features{
+    background-color: #40916C;
+    padding: 0.5rem 2rem;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.features .card{ 
+   background-color: rgb(236, 234, 234);
+   border-radius: 0.5rem;
+   text-align: center;
+   padding: 1rem;
+   width: 25vw;
+   border: 1px solid #39de49;
+   box-shadow: 3px 3px 0px #06500e;
+    transition: 0.25s all;
+
+}
+.features > .card:hover {
+    position:relative;
+    top:-5px;
+    left:-5px;
+    box-shadow: 7px 7px 0px #005809 ;
+}
+
+
+
+.float-left{
+    float: left;   
+    
+}
+
+.float-right{
+    /* float: right; */
+     width: 6rem;
+}
+
+.ml_1{
+    margin-left: 3rem;
+}
+
+footer{
+    background-color: #D8F3DC;
+    font-family: 'Nunito', sans-serif;
+    /* color: #ffffff; */
+    text-align: center;
+    padding:1rem;
+}
+
+footer > h3{
+    padding-top: 0.5rem;
+}
+
+
+@keyframes smooth_scroll{
+    from{
+        left:0%;
+    }
+    to{
+        left:-100%;
+    }
+}
+
+
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+
+nav > h1 {
+    display: inline;
+}
+nav > button {
+    float: right;
+    justify-self: flex-end;
+}
+
+nav > div{
+    align-items: center;
+}
+
+.anchor_btn{
+    border: 1px solid grey;
+    padding:0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.25s all;
+    color:black;
+    cursor: pointer;
+}
+
+.anchor_btn:hover{
+    background-color:grey;
+    color: white;
+}
+
+.footer_text{
+    font-size: 20px;
+}
+
+@media screen  and (max-width: 400px){
+nav h1{
+    display:none;
+}   
+}
+
+@media screen and (max-width: 850px){
+.main > img {
+    width: 60vw;
+}
+    .features{
+      flex-direction: column;
+    }
+    .features > .card{
+        width: initial;
+    }
+}

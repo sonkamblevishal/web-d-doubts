@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | CryptoView</title>
+    <link rel="stylesheet" href="search.css">
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Bootstrap File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Navigation Bar -->
+    <nav class="flex_container">
+        <div class="flex_container">
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/512/5901/5901014.png" alt="logo">
+            <h1 class="heading">CryptoView <h3>| </h3>
+                <h5> <i>Search & View Data </i> </h5>
+            </h1>
+        </div>
+
+    </nav>
+
+</head>
+
+<body>
+
+
+
+
+    <section class="search_option">
+
+        <form action="">
+            <div class="search_button">
+                <input type="text" class="form-control" placeholder="Search  (Ex.bitcoin)" name="q" id="search_field" />
+                <button class="btn btn-success">Search </button>
+            </div>
+        </form>
+        <img src="./images/image-2.png" alt="image" class="main flex_container">
+
+    </section>
+
+    <section>
+        <table class="fetch_info">
+            <thead class="row-items">
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Logo</th>
+                    <th>Name</th>
+                    <th>Link (More info)</th>
+                </tr>
+            </thead>
+
+            <tbody id="search_result">
+
+            </tbody>
+
+        </table>
+
+        <!-- <h2 class="search_heading"> Search Any Cryptocurrency </h2> -->
+        <!-- 
+        <h1>Table here</h1> -->
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer class="search_footer">
+        <!-- emsp for  empty space (like tab)  -->
+        <i class="fa-brands fa-facebook fa-xl"></i> &emsp;
+        <i class="fa-brands fa-instagram fa-xl"></i> &emsp;
+        <i class="fa-brands fa-twitter fa-xl"></i> &emsp;
+        <i class="fa-brands fa-linkedin fa-xl"></i> &emsp;
+        <h3 class="footer_text">© 2022 Cryptoview. All Rights Reserved.</h3>
+
+    </footer>
+
+
+    <script src="search.js"></script>
+</body>
+
+</html>

@@ -25,6 +25,10 @@
 }
 
 
+tbody{
+    display: block;
+}
+
 .btn-success{
     margin-top: 20px;
     color:red;
@@ -50,6 +54,7 @@
 
 .fetch_info thead tr th, .fetch_info tbody tr td{
        padding:20px;
+       width: 200px;
 }
 
 .row-items{
@@ -76,7 +81,6 @@
 
 .row-items{
     display: inline-block;
-    margin-left: 40%;
     width: 100%;
     margin-top: 80px;
     
